@@ -83,7 +83,7 @@ nav ul li.active,nav ul li:hover{
 
 /* CONTENIDO DEL MAIN */
 .main-content{
-    background-image: url('../images/istockphoto-1087448762-612x612.jpg');
+    background-image: url('../images/Pizarron.jpg');
     width: 80%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -180,16 +180,59 @@ margin-bottom: 10px;
     
     
 }
+.score-test a{
+    text-decoration: none;
+    color: white;
+}
 .titulo-test{
     font-size: 40px;
     border: black 2px solid;
-    padding: 20px;
+    padding: 30px 110px;
 }
 .titulo-test-hipervinculo{
     text-decoration: none;
     color: white;
 }
 
+/* a partir de aqui va el codigo de test 1 */
+.padre-scoreboard-test-1{
+margin-top: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px red solid;
+}
+.scoreboard-test-1{
+    border: 2px blue solid;
+    height: 340px;
+    width:40%;
+    background-color:rgb(3, 56, 130);
+    border-radius: 50px;
+}
+.scoreboard-test-1 div h2{
+    margin-left: 20px;
+    color: white;
+}
+.hijo-scoreboard-test-1{
+    border:2px green solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nieto-scoreboard-test-1{
+    background-color: rgb(42, 188, 144);
+    width:80%;
+    border-radius: 20px;
+    height: 180px;
+}
+.nieto-scoreboard-test-1 h3,label,input{
+    margin-left: 20px;
+    
+}
+.nieto-scoreboard-test-1 label{
+    font-weight: 700;
+    
+}
 
 
 
