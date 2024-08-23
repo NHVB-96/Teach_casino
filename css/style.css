@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    display: flex;
+}
+/* colores generales */
+.negro{
+    color: black;
+}
+.azul-claro{
+    background-color: rgb(140, 140, 248)!important;
+}
+.rojo{
+    background-color: red !important;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    color:white;
+    background-image: url('../images/5196-8.webp');
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.profile{
+    border: 1px solid green;
+    width: 100%;
+    display: flex;
+
+}
+.marco-avatar{
+    border: 1px solid blue;
+
+}
+.avatar{
+    background-color: antiquewhite;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.nombre-avatar p{
+    text-align: center;
+    font-weight: 800;
+
+}
+.info{
+    width: 100%;
+    text-align: center;
+}
+.info p{
+    font-weight: 800;
+}
+nav ul{
+    list-style: none;
+    padding:0;
+}
+nav ul li{
+    padding: 10px 0;
+    cursor: pointer;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+
+}
+.alineado{
+    display: flex;
+    justify-content: center;
+}
+
+.espacio-icono{
+  margin-right: 5px;
+}
+nav ul li.active,nav ul li:hover{
+    background-color: orange;
+}
+
+/* CONTENIDO DEL MAIN */
+.main-content{
+    background-image: url('../images/istockphoto-1087448762-612x612.jpg');
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* header del main*/
+.padre-header{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    background-color: gray;
+    display: flex;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-top: 20px;
+}
+.header-caja1{
+    border: 1px green solid;
+    position: absolute;
+    width: 20%;
+    left: -80px;
+    top:-5px;
+}
+.header-caja2{
+    border: 1px purple solid;
+    width:100%;
+}
+.canica{
+    position: absolute;
+    border: 1px black solid;
+}
+.score-board{
+border: 1px orange solid;
+display: flex;
+height: 350px;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-bottom: 10px;
+}
+.score{
+    border:1px red solid;
+    background-color: antiquewhite;
+    width: 35%;
+    border-radius: 10px;
+    height: 115px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.score h3{
+    margin-top: 0;
+}
+/*SECCION TEST*/
+.padre-header-test{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.header-test{
+    background-color: gray;
+    display: flex;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin-top: 20px;
+}
+.score-board-test{
+    border: 1px orange solid;
+    display: flex;
+    height: 580px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.score-test{
+    border:1px red solid;
+    background-color: antiquewhite;
+    width: 23%;
+    border-radius: 10px;
+    height: 115px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.titulo-test{
+    font-size: 40px;
+    border: black 2px solid;
+    padding: 20px;
+}
+.titulo-test-hipervinculo{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/*Footer del main*/
+.final-score{
+    border: 1px pink solid;
+    width: 98%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.caja-principal-final-score{
+    background-color: blue;
+    width: 60%;
+    border-radius: 50px;
+    margin: 5px 5px;
+}
+.caja-canica-barra{
+    display: flex;
+    border: 3px orangered solid;
+    position: relative;
+    justify-content: flex-end;
+}
+.caja-footer-canica{
+    border: 3px solid yellow;
+    width: 20%;
+    position: absolute;
+    left:0;
+}
+.padre-progress-bar{
+    border: 3px solid white;
+    width: 80%;
+}
+.progress-bar{
+    background-color: rgb(53, 51, 54);
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden; 
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+.progress{
+    background-color: greenyellow;
+    height: 100%;
+}
