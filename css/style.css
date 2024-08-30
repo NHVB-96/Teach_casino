@@ -14,13 +14,33 @@ body{
 .rojo{
     background-color: red !important;
 }
+/**log in**/
+.caja_principal{
+    border: 2px orange solid;
+    margin-left: 30%;
+    width: 75%;
+}
+.seccion-1{
+    border:2px red solid;
+}
+.header-titulo{
+    background-color: gray;
+    width: 35%;
+    margin-left: 33%;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+.header-titulo h1{
+    text-align: center;
+    color: white;
+}
 .contenedor{
     width: 100%;
     display: flex;
 }
 .sidebar{
     color:white;
-    background-image: url('../images/5196-8.webp');
+    background-image: url('../images/Sidebar.webp');
     width: 20%;
     padding: 20px;
     box-sizing: border-box;
