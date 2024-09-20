@@ -413,3 +413,55 @@ section.grupos-main-principal .cajas-grupos h2{
 
 }
 /*Seccion Alumnos*/
+.main-content-Alumnos{
+    background-image: url("/images/Pizarron.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid blue;
+}
+.alumnos-main-principal{
+    width: 90%;
+    height: 75%;
+    border: 2px solid rgb(235, 9, 141);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 15px;
+
+}
+section.alumnos-main-principal .cajas-alumnos{
+    width: 20%;
+    height: 15%;
+    border:2px solid yellow;
+    background-color: gray;
+    margin-left: 50px;
+}
+.cajas-alumnos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid orange;
+    
+}
+a.caja-contenedor-alumnos{
+    text-decoration: none;
+    color: white;
+}
+div.boton-verde{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(151, 248, 7);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+div.boton-rojo{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(234, 2, 2);
+    border-radius: 50%;
+    border: 1px solid black;
+}
