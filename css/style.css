@@ -524,19 +524,27 @@ section.grupos-main-principal .cajas-grupos h2{
     height: 600px;
 
  }
- .cards-red{
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 70px;
-}
 .main-card{
     border: 2px solid white;
 }
 .collected-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
 }   
+.cards-red{
+   margin-top: 60px;
+   
+}
+#They, #We, #It{
+    transform: translate(-90px,-90px);
+
+}
+#It{
+    margin-left: 170px;
+}
 .collected-cards-green{
     width: 100%;
     display: flex;
@@ -544,6 +552,3 @@ section.grupos-main-principal .cajas-grupos h2{
     justify-content: center;
     gap: 50px; 
 }   
-.cards-green{
-     
-}
