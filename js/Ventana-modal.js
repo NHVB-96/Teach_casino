@@ -33,8 +33,13 @@ let botonesGrupo = document.querySelectorAll('.caja-modal button');
 //recorre cada boton y agrega un evento de click 
 botonesGrupo.forEach(boton => {
     boton.addEventListener('click' , (event) => {
+
+     let grupoSeleccionado = event.target.textContent;
+
      //verificar si es el boton del grupo 1 
-     if (event.target.textContent === "Grupo 1"){
+     if (grupoSeleccionado.startsWith("Grupo")){
+
+        let numeroGrupo = grupoSeleccionado.split(" ")[1];
         // encontrar div con la clase caja-contendeor-alumnos
         let cajaAlumno = boton.closest('.caja-alumnos-botones').querySelector('.cajas-alumnos');
 
@@ -45,14 +50,17 @@ botonesGrupo.forEach(boton => {
 
         }
 
+        let claveAlumnosGrupo = `alumnos_grupo_${numeroGrupo}`;
+        
         //Guarda los elementos en el local storage(navegador)
         let alumnosGuardados = localStorage.getItem('alumnos') || '[]';
         let alumnosArray = JSON.parse(alumnosGuardados);
+
         alumnosArray.push(cajaAlumno.outerHTML);
-        localStorage.setItem('alumnos',JSON.stringify(alumnosArray));
+        localStorage.setItem(claveAlumnosGrupo,JSON.stringify(alumnosArray));
 
         //Redirige a otro archivo donde se mostrara el contenido
-        window.location.href='Grupo-1.html';
+        window.location.href=`grupo-${numeroGrupo}.html`;
 
      }
     })
