@@ -4,7 +4,7 @@ let claveAlumnosGrupo = `alumnos_grupo_${numeroGrupo}`;
 let alumnosGuardados = localStorage.getItem(claveAlumnosGrupo);
 
 if(alumnosGuardados){
-    let contenedor = document.getElementById('alumno-container');
+    let contenedor = document.getElementById('alumno-contenedor');
     let alumnosArray = JSON.parse(alumnosGuardados);
     alumnosArray.forEach(alumno => {
        let div = document.createElement('div');
